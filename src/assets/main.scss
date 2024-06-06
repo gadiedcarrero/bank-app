@@ -1,0 +1,38 @@
+// Importa las variables
+@import './variables';
+
+:root {
+  --breakpoint: 768px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // Esto hace que 1rem sea igual a 10px
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size-normal;
+  color: $dark-blue;
+  background-color: $very-light-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+}
+
+p {
+  line-height: $line-height; // Esto proporciona un espacio vertical agradable entre las líneas de texto
+}

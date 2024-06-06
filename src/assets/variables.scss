@@ -1,0 +1,38 @@
+// Breakpoints
+$width-mobile: 375px;
+$width-desktop: 1114px;
+
+// Colors
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+// Font
+$font-family: 'Public Sans', sans-serif;
+$line-height: 1.6;
+$font-weight: 400;
+$font-size-normal: 18px;
+$font-size-heading: 54px;
+$font-size-subheading: 16px;
+$font-size-btn: 14px;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Hamburger Menu
+$bar-width: 32px;
+$bar-height: 4px;
+$hamburger-gap: 4px;
+$foreground: #333;
+$background: #fff;
+$hamburger-border-radius: 8px;
+$hamburger-height: calc(#{$bar-height} * 3 + #{$hamburger-gap} * 2);
+$hamburger-x-width: calc(#{$hamburger-height} * 1.41421356237);
+$hamburger-x-height: calc(#{$bar-height} / 2);
+
+// Animations
+$animation-duration: 0.3s;
