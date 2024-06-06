@@ -50,7 +50,7 @@ import ButtonClassic from '@/components/ButtonClassicComponent.vue'
   &__title {
     font-size: $font-size-heading;
     font-weight: $font-weight-light;
-    color: dark-blue;
+    color: $dark-blue;
   }
 
   &__text {

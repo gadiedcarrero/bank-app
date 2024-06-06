@@ -32,10 +32,15 @@ const activeItem = ref(navItems[0])
 }
 .nav-item {
   cursor: pointer;
+
+  &:hover {
+    color: $dark-blue;
+  }
 }
 
 .nav-link-active {
   position: relative;
+  color: $dark-blue;
 
   &::after {
     content: '';
