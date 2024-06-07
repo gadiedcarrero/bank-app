@@ -164,7 +164,7 @@ import ButtonClassic from '@/components/ButtonClassicComponent.vue'
     display: flex;
     gap: 16px;
 
-    ::v-deep svg {
+    &:deep(svg) {
       cursor: pointer;
       &:hover path {
         fill: $lime-green;
