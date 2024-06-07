@@ -36,20 +36,29 @@ defineProps({
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
+  @media (min-width: $breakpoint) {
+    align-items: flex-start;
+  }
 
   &__title {
     margin-top: 42px;
     font-size: $font-size-card-title;
     color: $dark-blue;
     margin-bottom: 32px;
+    text-align: center;
   }
 
   &__description {
     font-size: $font-size-normal;
     color: $grayish-blue;
+    text-align: center;
+
+    @media (min-width: $breakpoint) {
+      text-align: left;
+    }
   }
 }
 </style>

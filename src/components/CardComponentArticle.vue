@@ -42,7 +42,7 @@ defineProps({
 .card-article {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 100%;
   background-color: $white;
   cursor: pointer;
   overflow: hidden;
@@ -52,11 +52,6 @@ defineProps({
   &:active {
     .card-article__title {
       color: $lime-green;
-    }
-
-    .card-article__img {
-      transform: scale(1.1);
-      transition: transform $animation-duration ease-in-out;
     }
   }
 
@@ -68,6 +63,7 @@ defineProps({
     justify-content: center;
     width: 100%;
     padding: 26px;
+    background: $white;
   }
 
   &__img {

@@ -29,13 +29,9 @@ import cardAbout from '@/utils/cardAbout.js'
 .about {
   background-color: $light-grayish-blue;
   width: 100%;
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   &__container {
-    width: $width-desktop;
+    @include responsive-width;
   }
 
   &__title {
@@ -43,19 +39,37 @@ import cardAbout from '@/utils/cardAbout.js'
     font-weight: $font-weight-light;
     color: $dark-blue;
     margin-bottom: 32px;
+    text-align: center;
+    padding-top: 64px;
+
+    @media (min-width: $breakpoint) {
+      text-align: left;
+    }
   }
 
   &__text {
     font-size: $font-size-normal;
     color: $grayish-blue;
-    width: 650px;
     margin-bottom: 74px;
+    text-align: center;
+
+    @media (min-width: $breakpoint) {
+      text-align: left;
+      width: 650px;
+    }
   }
 
   &__card-group {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     gap: 24px;
+    padding-bottom: 64px;
+
+    @media (min-width: $breakpoint) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
 </style>

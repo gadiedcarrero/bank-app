@@ -26,37 +26,33 @@ import cardArticle from '@/utils/cardArticles.js'
 
 .articles {
   background-color: $very-light-gray;
-  width: 100%;
-  padding-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-top: 96px;
   padding-bottom: 70px;
 
   &__title {
     font-size: $font-size-about-title;
     font-weight: $font-weight-light;
     color: $dark-blue;
-    padding-top: 96px;
-    color: $dark-blue;
     padding-bottom: 56px;
   }
 
   &__container {
-    width: $width-desktop;
+    @include responsive-width;
   }
 
   &__card-group {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 24px;
+    @media (min-width: $breakpoint) {
+      flex-direction: row;
+    }
   }
 
   &__text {
     font-size: $font-size-normal;
     color: $grayish-blue;
-    width: 650px;
     margin-bottom: 74px;
   }
 }

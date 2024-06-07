@@ -1,4 +1,3 @@
-// Importa las variables
 @import './variables';
 
 :root {
@@ -12,16 +11,17 @@
 }
 
 html {
-  font-size: 62.5%; // Esto hace que 1rem sea igual a 10px
+  font-size: 62.5%;
 }
 
 body {
-  margin: 0;
   padding: 0;
   font-family: $font-family;
   font-size: $font-size-normal;
   color: $dark-blue;
   background-color: $very-light-gray;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1,
@@ -34,5 +34,13 @@ h6 {
 }
 
 p {
-  line-height: $line-height; // Esto proporciona un espacio vertical agradable entre las líneas de texto
+  line-height: $line-height;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  unicode-bidi: normal;
 }

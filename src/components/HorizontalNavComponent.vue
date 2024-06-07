@@ -45,7 +45,7 @@ const activeItem = ref(navItems[0])
   &::after {
     content: '';
     position: absolute;
-    bottom: -28px;
+    bottom: -24px;
     left: 0;
     width: 100%;
     height: 3px;
