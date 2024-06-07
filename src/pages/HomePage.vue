@@ -28,10 +28,10 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import ButtonClassic from '@/components/ButtonClassicComponent.vue'
 
-let isMobile = ref(window.innerWidth < 768)
+let isMobile = ref(window.innerWidth < 986)
 
 const updateIsMobile = () => {
-  isMobile.value = window.innerWidth < 768
+  isMobile.value = window.innerWidth < 986
 }
 
 onMounted(() => {
@@ -55,7 +55,7 @@ onUnmounted(() => {
   justify-content: center;
   padding-bottom: 100px;
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpoint-sd) {
     flex-direction: row;
     justify-content: flex-start;
     height: 658px;
@@ -99,7 +99,7 @@ onUnmounted(() => {
     width: 100%;
     gap: 24px;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       align-items: flex-start;
       width: 450px;
       gap: 24px;
@@ -112,7 +112,7 @@ onUnmounted(() => {
     color: $dark-blue;
     text-align: center;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       text-align: left;
     }
   }
@@ -122,7 +122,7 @@ onUnmounted(() => {
     color: $grayish-blue;
     text-align: center;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       text-align: left;
     }
   }
@@ -135,7 +135,7 @@ onUnmounted(() => {
 
     width: 100%;
     top: 0;
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       display: block;
     }
   }
@@ -145,8 +145,11 @@ onUnmounted(() => {
     top: -265px;
     right: -469px;
     display: none;
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       display: block;
+    }
+    @media (min-width: $breakpoint-sd) and (max-width: $breakpoint-md) {
+      right: calc(50vw - 1229px);
     }
   }
 
@@ -158,7 +161,7 @@ onUnmounted(() => {
     width: 100%;
     height: 805px;
     display: none;
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       display: block;
     }
   }
@@ -168,8 +171,11 @@ onUnmounted(() => {
     top: -123px;
     right: -131px;
     display: none;
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       display: block;
+    }
+    @media (min-width: $breakpoint-sd) and (max-width: $breakpoint-md) {
+      right: calc(50vw - 880px);
     }
   }
 }

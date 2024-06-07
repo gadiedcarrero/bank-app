@@ -39,7 +39,7 @@ defineProps({
   align-items: center;
   justify-content: center;
   width: 100%;
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpoint-sd) {
     align-items: flex-start;
   }
 
@@ -49,6 +49,7 @@ defineProps({
     color: $dark-blue;
     margin-bottom: 32px;
     text-align: center;
+    white-space: nowrap;
   }
 
   &__description {
@@ -56,7 +57,7 @@ defineProps({
     color: $grayish-blue;
     text-align: center;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       text-align: left;
     }
   }

@@ -1,7 +1,6 @@
 // Breakpoints
-$width-mobile: 375px;
-$width-desktop: 1114px;
-$breakpoint: 768px;
+$breakpoint-sd: 986px;
+$breakpoint-md: 1360px;
 
 // Colors
 $dark-blue: hsl(233, 26%, 24%);
@@ -24,7 +23,7 @@ $font-size-normal: 18px;
 $font-size-card-title: 23px;
 $font-size-about-title: 38px;
 $font-size-heading: 36px;
-@media (min-width: $breakpoint) {
+@media (min-width: $breakpoint-sd) {
   $font-size-heading: 54px;
 }
 $font-weight-light: 300;
@@ -68,7 +67,12 @@ $animation-duration: 0.3s;
   margin-left: 48px;
   margin-right: 48px;
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpoint-sd) and (max-width: $breakpoint-md) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  @media (min-width: $breakpoint-md) {
     margin-left: 164px;
     margin-right: 164px;
   }

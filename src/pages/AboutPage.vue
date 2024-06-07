@@ -42,7 +42,7 @@ import cardAbout from '@/utils/cardAbout.js'
     text-align: center;
     padding-top: 64px;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       text-align: left;
     }
   }
@@ -53,7 +53,7 @@ import cardAbout from '@/utils/cardAbout.js'
     margin-bottom: 74px;
     text-align: center;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       text-align: left;
       width: 650px;
     }
@@ -66,9 +66,10 @@ import cardAbout from '@/utils/cardAbout.js'
     gap: 24px;
     padding-bottom: 64px;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       flex-direction: row;
       justify-content: space-between;
+      align-items: flex-start;
     }
   }
 }

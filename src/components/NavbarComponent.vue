@@ -33,13 +33,13 @@ import ButtonClassic from './ButtonClassicComponent.vue'
 let showMenu = ref(false)
 let isMobile = ref(
   window.innerWidth <
-    parseInt(getComputedStyle(document.documentElement).getPropertyValue('--breakpoint'))
+    parseInt(getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sd'))
 )
 
 const updateIsMobile = () => {
   isMobile.value =
     window.innerWidth <
-    parseInt(getComputedStyle(document.documentElement).getPropertyValue('--breakpoint'))
+    parseInt(getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sd'))
 }
 
 onMounted(() => {
@@ -103,7 +103,7 @@ const toggleMenu = (event) => {
   height: 60px;
   z-index: 200;
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpoint-sd) {
     height: 80px;
   }
 

@@ -97,7 +97,7 @@ import ButtonClassic from '@/components/ButtonClassicComponent.vue'
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       flex-direction: row;
       align-items: flex-start;
     }
@@ -115,7 +115,7 @@ import ButtonClassic from '@/components/ButtonClassicComponent.vue'
     align-items: center;
     justify-content: center;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       gap: 56px;
       align-items: flex-start;
       justify-content: flex-start;
@@ -127,7 +127,7 @@ import ButtonClassic from '@/components/ButtonClassicComponent.vue'
     justify-content: center;
     align-items: center;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       justify-content: flex-start;
       align-items: flex-start;
     }
@@ -143,7 +143,7 @@ import ButtonClassic from '@/components/ButtonClassicComponent.vue'
   &__col-text:nth-of-type(3) {
     margin-top: -24px;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       margin-top: 0;
     }
   }
@@ -153,7 +153,7 @@ import ButtonClassic from '@/components/ButtonClassicComponent.vue'
     align-items: center;
     justify-content: center;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       gap: 30px;
       align-items: flex-end;
       justify-content: flex-start;

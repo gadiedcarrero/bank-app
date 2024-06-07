@@ -45,7 +45,7 @@ import cardArticle from '@/utils/cardArticles.js'
     flex-direction: column;
     justify-content: space-between;
     gap: 24px;
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-sd) {
       flex-direction: row;
     }
   }

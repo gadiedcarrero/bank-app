@@ -27,6 +27,7 @@ defineProps({
   font-size: $font-size-btn;
   cursor: pointer;
   border: none;
+  white-space: nowrap;
   font-weight: $font-weight-bold;
   transition: box-shadow 0.3s ease;
 
